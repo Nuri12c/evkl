@@ -32,14 +32,13 @@ ul {
     position: fixed;
     width: 35%;
     height: 100%;
-    min-height: 190px;
     background-color: #ffffff;
-    transform: translateY(-110%);
+    transform: translateX(-100%);
     transition: 0.3s ease-in;
-    overflow: auto;
     display: flex;
     flex-direction: column;
     padding: 100px 0 0 50px;
+    overflow: auto;
 }
 .burger__item {
     list-style: none;
@@ -1049,7 +1048,7 @@ color: #CACACA;
     }
     .burger__menu {
         padding: 70px 0 0 20px;
-        justify-content: space-between;
+        width: 100%;
     }
     .burger__item {
         list-style: none;
