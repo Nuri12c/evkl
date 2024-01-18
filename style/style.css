@@ -23,6 +23,37 @@ ul {
 /* HEADER */
 .burger {
     display: none;
+    z-index: 10;
+}
+.burger__active {
+    position: fixed;
+}
+.burger__menu {
+    position: fixed;
+    width: 35%;
+    height: 70%;
+    min-height: 190px;
+    background-color: #ffffff;
+    transform: translateY(-100%);
+    transition: 0.3s ease-in;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0 0 50px;
+}
+.burger__item {
+    list-style: none;
+    margin-bottom: 30px;
+}
+.menu__active {
+    transform: none;
+}
+.ss {
+    display: none;
+}
+.ssq {
+    display: block;
+    width: 30px;
 }
 header {
     width: 100%;
@@ -39,6 +70,7 @@ header {
     width: 224px;
     height: 72px;
 }
+
 .nav {
     margin-left: auto;
 }
@@ -278,7 +310,6 @@ text-align: left;
 }
 /* HOWW */
 
-
 .how__header {
     margin-bottom: 50px;
 }
@@ -287,14 +318,15 @@ text-align: left;
     margin-bottom: 45px;
 }
 .how__page-item {
-    margin-right: 85px;
-    font-family: Montserrat;
+margin-right: 85px;
+font-family: Montserrat;
 font-size: 18px;
 font-weight: 400;
 line-height: 22px;
 letter-spacing: 0em;
 color: #333333;
 transition: 0.2s ease;
+cursor: pointer;
 }
 .how__page-item:hover {
     color: #FF9900;
@@ -630,6 +662,7 @@ color: #CACACA;
     .hero__p {
         font-size: 20px;
         margin-bottom: 60px;
+        margin-left: 0;
     }
     .container__hero {
         background: url(../img/ll-hero.jpg);
@@ -695,6 +728,7 @@ color: #CACACA;
         width: 100%;
     }
     .hero__p {
+        margin: 0 auto;
         margin-bottom: 32px;
         font-size: 12px;
         font-weight: 700;
@@ -896,6 +930,8 @@ color: #CACACA;
         font-size: 12px;
         padding: 10px 31px;
     }
+  
+    
     .btns {
         display: flex;
         justify-content: space-between;
@@ -1008,4 +1044,41 @@ color: #CACACA;
     .footer__social:not(:last-child) {
         margin-right: 16px;
     }
+    .how__page-item {
+        margin-right: 40px;
+    }
+    .burger__menu {
+        padding: 70px 0 0 20px;
+        justify-content: space-between;
+    }
+    .burger__item {
+        list-style: none;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+
+.how__item-l {
+    display: none;
+}
+.how__item-l-active {
+    display: block;
+}
+.bg1 {
+    background: url(../img/howw-bg.jpg);
+    background-size: cover;
+}
+.bg2 {
+    background: url(../img/Rectangle18.jpg);
+    background-size: cover;
+}
+.bg3 {
+    background: url(../img/Rectangle19.jpg);
+    background-size: cover;
+}
+.bg4 {
+    background: url(../img/Rectangle20.jpg);
+    background-size: cover;
 }
