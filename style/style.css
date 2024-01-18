@@ -33,7 +33,6 @@ ul {
     width: 35%;
     height: 100%;
     min-height: 190px;
-    
     background-color: #ffffff;
     transform: translateY(-100%);
     transition: 0.3s ease-in;
