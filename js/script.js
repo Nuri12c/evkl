@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   }
   
-  preloadImages(["bggg2.jpg", "bggg3.jpg", "bg-hero.jpg", "ll-hero.jpg"]);
+  preloadImages(["../img/bggg2.jpg", "../img/bggg3.jpg", "../img/bg-hero.jpg", "../img/ll-hero.jpg"]);
 
    document.querySelector('.circle__item1').addEventListener('click', function(){
       document.querySelector('.container__hero').classList.remove('container__hero2')
