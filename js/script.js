@@ -47,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function () {
    document.querySelectorAll('.circle__item').forEach (function (circules) {
       circules.addEventListener('click', function (ent) {
          const path = event.currentTarget.dataset.path
-         console.log ('k')
          document.querySelectorAll('.circle__item').forEach (function (TabContent) {
             TabContent.classList.remove('circle__item-active')
          })
