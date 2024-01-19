@@ -3,6 +3,39 @@ console.log('PRIVIETIK')
 
 document.addEventListener('DOMContentLoaded', function () {
 
+   document.querySelector('.circle__item1').addEventListener('click', function(){
+      document.querySelector('.container__hero').classList.remove('container__hero2')
+      document.querySelector('.container__hero').classList.remove('container__hero3')
+      document.querySelector('.container__hero').classList.add('container__hero1')
+   })
+   document.querySelector('.circle__item2').addEventListener('click', function(){
+      document.querySelector('.container__hero').classList.remove('container__hero1')
+      document.querySelector('.container__hero').classList.remove('container__hero3')
+      document.querySelector('.container__hero').classList.add('container__hero2')
+   })
+   document.querySelector('.circle__item3').addEventListener('click', function(){
+      document.querySelector('.container__hero').classList.remove('container__hero2')
+      document.querySelector('.container__hero').classList.remove('container__hero1')
+      document.querySelector('.container__hero').classList.add('container__hero3')
+   })
+   
+
+
+   document.querySelectorAll('.circle__item').forEach (function (circules) {
+      circules.addEventListener('click', function (ent) {
+         const path = event.currentTarget.dataset.path
+         console.log ('k')
+         document.querySelectorAll('.circle__item').forEach (function (TabContent) {
+            TabContent.classList.remove('circle__item-active')
+         })
+         document.querySelector(`[data-target="${path}"]`).classList.add('circle__item-active')
+      })
+
+      
+   })
+
+
+
 
    document.querySelector('.burger').addEventListener('click', function () {
       document.querySelector('.burger__menu').classList.toggle('menu__active')
@@ -51,6 +84,28 @@ document.addEventListener('DOMContentLoaded', function () {
    })
 
 })
+
+
+
+window.addEventListener('DOMContentLoaded', function (){
+   setInterval(function () {
+      setTimeout(function () {
+         const button = document.getElementById('ww');
+      button.click();
+      }, 3000)
+      setTimeout(function () {
+         const button = document.getElementById('ee');
+      button.click();
+      }, 6000)
+      setTimeout(function () {
+         const button = document.getElementById('qq');
+      button.click();
+      }, 9000)
+   }, 12000)
+   
+})
+
+
 
 
 

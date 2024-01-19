@@ -141,16 +141,53 @@ color: #333333;
 
 
 /* HERO */
+.circle__list {
+    display: flex;
+    margin: 20px auto;
+    margin-bottom: 0;
+}
+.circle__item {
+    width: 15px;
+    height: 15px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    opacity: 40%;
+    cursor: pointer;
+}
+.circle__item:not(:last-child) {
+    margin-right: 20px;
+}
+.circle__item-active {
+    opacity: 100%;
+}
+
+
 .container__hero {
     height: 620px;
     background: url(../img/bg-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 100px 80px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 100px;
+}
+.container__hero1 {
+    background: url(../img/bg-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container__hero2 {
+    background: url(../img/bggg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container__hero3 {
+    background: url(../img/bggg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .hero__heading {
     color: white;
@@ -173,6 +210,7 @@ color: #333333;
     color: white;
     padding: 24px 36px;
     background-color: #FF9900;
+    margin-bottom: 0;
 }
 .hero__button:hover,
 .how__left-button:hover,
@@ -666,6 +704,22 @@ color: #CACACA;
     .container__hero {
         background: url(../img/ll-hero.jpg);
         background-size: cover;
+        padding-bottom: 30px;
+    }
+    .container__hero1 {
+        background: url(../img/ll-hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .container__hero2 {
+        background: url(../img/bggg2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .container__hero3 {
+        background: url(../img/bggg3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     .nav {
         display: none;
@@ -750,9 +804,25 @@ color: #CACACA;
         background: url(../img/sm-hero.jpg);
         background-size: cover;
         padding: 60px 22px;
+        padding-bottom: 15px;
         height: 308px;
         margin-bottom: 60px;
 
+    }
+    .container__hero1 {
+        background: url(../img/ll-hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .container__hero2 {
+        background: url(../img/bggg2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .container__hero3 {
+        background: url(../img/bggg3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     .main__header {
         font-size: 24px;
@@ -1048,11 +1118,7 @@ color: #CACACA;
     }
     .burger__menu {
         padding: 70px 0 0 20px;
-        width: 100%;
-    }
-    .burger__item {
-        list-style: none;
-        margin-bottom: 5px;
+        width: 80%;
     }
 }
 
