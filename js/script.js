@@ -3,6 +3,29 @@ console.log('PRIVIETIK')
 
 document.addEventListener('DOMContentLoaded', function () {
 
+
+   function preloadImages(array) {
+      if (!preloadImages.list) {
+          preloadImages.list = [];
+      }
+      var list = preloadImages.list;
+      for (var i = 0; i < array.length; i++) {
+          var img = new Image();
+          img.onload = function() {
+              var index = list.indexOf(this);
+              if (index !== -1) {
+                  // remove image from the array once it's loaded
+                  // for memory consumption reasons
+                  list.splice(index, 1);
+              }
+          }
+          list.push(img);
+          img.src = array[i];
+      }
+  }
+  
+  preloadImages(["bggg2.jpg", "bggg3.jpg", "bg-hero.jpg", "ll-hero.jpg"]);
+
    document.querySelector('.circle__item1').addEventListener('click', function(){
       document.querySelector('.container__hero').classList.remove('container__hero2')
       document.querySelector('.container__hero').classList.remove('container__hero3')
