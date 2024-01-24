@@ -462,17 +462,19 @@ font-weight: 700;
 line-height: 32px;
 letter-spacing: 0em;
 text-align: left;
+width: 80%;
 
   }
   
   .iiii1,  .iiii2,  .iiii3 ,  .iiii4,  .iiii5,  .iiii6 {
     position: absolute;
-    top: 25px;
+    top: 30px;
     right: 0;
     transition: all .3s ease;
   }
+  
   .iiii-activv {
-    transform: rotate(90deg);
+    transform: rotate(45deg);
   }
   
   /* Hides the content (height: 0), decreases font size, justifies text and adds transition */
@@ -496,15 +498,39 @@ text-align: left;
   }
   
   /* Adds a horizontal line between the contents */
-  
-  .accordion hr {
-    width: 100;
-    margin-left: 0;
+  .container1 {
     border:  1px solid #CACACA;
-    border-left: 0;
-    border-right: 0;
+    border-left: none;
+    border-right: none;
   }
   
+  .container1:hover {
+    border:  1px solid #FF9900;
+    border-left: none;
+    border-right: none;
+    color: #FF9900;
+  }
+  .container1:hover .qq {
+    fill: #FF9900;
+  }
+  .container1:hover .wwwe {
+    fill: #ffffff;
+  }
+  .container1:active {
+    border:  1px solid #FF9900;
+    border-left: none;
+    border-right: none;
+    color: #FF9900;
+  }
+  .container1:active .qq {
+    fill: #FF9900;
+  }
+  .container1:active .wwwe {
+    fill: #ffffff;
+  }
+  .content {
+    color: #000000;
+  }
 .accordion .container1.active .content {
     height: 300px;
   }
@@ -1138,6 +1164,13 @@ color: #CACACA;
     .burger__menu {
         padding: 70px 0 0 20px;
         width: 80%;
+    }
+    .accordion .content {
+        font-size: 10px;
+        line-height: 2em;
+    }
+    .accordion .label {
+        font-size: 15px;
     }
 }
 
