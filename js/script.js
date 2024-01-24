@@ -101,9 +101,7 @@ document.querySelector('.con4').addEventListener('click', function(){
 document.querySelector('.con5').addEventListener('click', function(){
    document.querySelector('.iiii5').classList.toggle('iiii-activv')
 })
-document.querySelector('.con6').addEventListener('click', function(){
-   document.querySelector('.iiii6').classList.toggle('iiii-activv')
-})
+
 
    document.querySelector('.how__page-item1').addEventListener('click', function(){
       document.querySelector('.how__item-bg').classList.remove('bg2')
