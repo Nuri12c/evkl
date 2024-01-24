@@ -79,6 +79,31 @@ document.addEventListener('DOMContentLoaded', function () {
       })
    })
 
+   const accordion = document.getElementsByClassName('container1');
+
+for (i=0; i<accordion.length; i++) {
+  accordion[i].addEventListener('click', function () {
+    this.classList.toggle('active')
+  })
+}
+document.querySelector('.con1').addEventListener('click', function(){
+   document.querySelector('.iiii1').classList.toggle('iiii-activv')
+})
+document.querySelector('.con2').addEventListener('click', function(){
+   document.querySelector('.iiii2').classList.toggle('iiii-activv')
+})
+document.querySelector('.con3').addEventListener('click', function(){
+   document.querySelector('.iiii3').classList.toggle('iiii-activv')
+})
+document.querySelector('.con4').addEventListener('click', function(){
+   document.querySelector('.iiii4').classList.toggle('iiii-activv')
+})
+document.querySelector('.con5').addEventListener('click', function(){
+   document.querySelector('.iiii5').classList.toggle('iiii-activv')
+})
+document.querySelector('.con6').addEventListener('click', function(){
+   document.querySelector('.iiii6').classList.toggle('iiii-activv')
+})
 
    document.querySelector('.how__page-item1').addEventListener('click', function(){
       document.querySelector('.how__item-bg').classList.remove('bg2')
