@@ -439,38 +439,23 @@ cursor: pointer;
     margin-bottom: 100px;
 }
 
-.questions__list {
-    display: flex;
-    flex-direction: column;
-}
-.questions__items:not(:last-child) {
-    display: flex;
-    justify-content: space-between;
-    height: 112px;
-    border-top: 1px solid #CACACA;
-    align-items: center;
-    transition: 0.2s ease;
-    cursor: pointer;
-}
-.questions__items:last-child {
-    border-bottom: 1px solid #CACACA;
-    display: flex;
-    justify-content: space-between;
-    height: 112px;
-    border-top: 1px solid #CACACA;
-    align-items: center;
-    transition: 0.2s ease;
-    cursor: pointer;
-}
-.questions__items:hover {
-    color: #FF9900;
-    border-top: 1px solid #FF9900;
-    .questions__items-img {
-        transform: rotate(45deg);
-    }
-}
 
-.questions__text {
+
+/* QUESTIONS */
+
+
+
+
+  .accordion .container1 {
+    position: relative;
+  }
+  
+  /* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
+  
+  .accordion .label {
+    position: relative;
+    padding: 40px 0 40px 0;
+    cursor: pointer;
     font-family: Montserrat;
 font-size: 24px;
 font-weight: 700;
@@ -478,10 +463,53 @@ line-height: 32px;
 letter-spacing: 0em;
 text-align: left;
 
-}
-.questions__items-img {
-    transition: 0.2s ease;
-}
+  }
+  
+  .iiii1,  .iiii2,  .iiii3 ,  .iiii4,  .iiii5,  .iiii6 {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    transition: all .3s ease;
+  }
+  .iiii-activv {
+    transform: rotate(90deg);
+  }
+  
+  /* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+  
+  .accordion .content {
+    position: relative;
+    background: white;
+    height: 0;
+    
+    text-align: justify;
+    overflow: hidden;
+    transition: 0.5s;
+    font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 32px;
+letter-spacing: 0em;
+text-align: left;
+
+    
+  }
+  
+  /* Adds a horizontal line between the contents */
+  
+  .accordion hr {
+    width: 100;
+    margin-left: 0;
+    border:  1px solid #CACACA;
+    border-left: 0;
+    border-right: 0;
+  }
+  
+.accordion .container1.active .content {
+    height: 300px;
+  }
+  
+  /* Changes from plus sign to negative sign once active */
 /* footer */
 
 .footer__list {
@@ -669,9 +697,7 @@ color: #CACACA;
     .footer__list {
         justify-content: space-between;
     }
-    .questions__text {
-        font-size: 20px;
-    }
+
 }
 @media (max-width: 1024px) and (min-width: 768px) {
     .header__logo {
@@ -1007,15 +1033,6 @@ color: #CACACA;
         display: flex;
         justify-content: space-between;
         margin-bottom: 60px;
-    }
-    .questions__text {
-        font-family: Montserrat;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: left;
-        
     }
     .footer__container {
         background-color: #222222;
